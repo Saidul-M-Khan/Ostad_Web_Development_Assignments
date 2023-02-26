@@ -37,9 +37,9 @@ class Person {
 
 }
 $person = new Person( "John", "john@gmail.com" );
-// echo "<br><br><strong>Task-2</strong><br>";
-// echo "Name: " . $person->getName() .   "<br>";
-// echo "Email: " . $person->getEmail() . "<br>";
+echo "<br><br><strong>Task-2</strong><br>";
+echo "Name: " . $person->getName() .   "<br>";
+echo "Email: " . $person->getEmail() . "<br>";
 
 // Task 3
 if ( isset($_POST['submit']) ) {
