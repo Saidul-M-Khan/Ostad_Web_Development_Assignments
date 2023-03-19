@@ -1,0 +1,83 @@
+Using the employees table to answer the following questions:
+
+a. Write a query to select all columns and rows from the employees table.
+
+Query: SELECT * FROM employees;
+
+Explanation: This query selects all columns and rows from the employees table. The * symbol is used to select all columns. The FROM clause is used to specify the table that the columns will be selected from. The WHERE clause is not used in this query because all columns and rows are selected.
+
+
+
+b. Write a query to select only the name and salary columns of all employees with a salary greater than 50000.
+
+Query: SELECT name, salary FROM employees WHERE salary>50000;
+
+Explanation: This query selects only the name and salary columns of all employees with a salary greater than 50000. The WHERE clause is used to filter the results to only include employees with a salary greater than 50000.  
+
+
+
+c. Write a query to calculate the average salary of all employees.
+
+Query: SELECT AVG(salary) FROM employees;
+
+Explanation: This query calculates the average salary of all employees. AVG() is a function that calculates the average of a column. The FROM clause is used to specify the table that the column is in.
+
+
+
+d. Write a query to count the number of employees who work in the "Marketing" department.
+
+Query: SELECT COUNT(*) AS 'Total Employees in Marketing Department' FROM employees RIGHT JOIN departments ON employees.id=departments.id WHERE departments.name='Marketing';
+
+Explanation: This query counts the number of employees who work in the "Marketing" department. COUNT(*) is a function that counts the number of rows in a column. The RIGHT JOIN clause is used to join the employees and departments tables. The ON clause is used to specify the column that the two tables are joined on. The WHERE clause is used to filter the results to only include employees who work in the "Marketing" department. The AS clause is used to rename the column name. The AS clause is optional.
+
+
+
+e. Write a query to update the salary column of the employee with an id of 1001 to 60000.
+
+Query: UPDATE employees SET salary=60000 WHERE id=1001
+
+Explanation: This query updates the salary column of the employee with an id of 1001 to 60000. The SET clause is used to specify the column and value that will be updated. The WHERE clause is used to filter the results to only include the employee with an id of 1001.
+
+
+
+f. Write a query to delete all employees whose salary is less than 30000.
+
+Query: DELETE FROM employees WHERE salary<30000;
+
+Explanation: This query deletes all employees whose salary is less than 30000. The DELETE statement is used to delete rows from a table. The FROM clause is used to specify the table that the rows will be deleted from. The WHERE clause is used to filter the results to only include employees whose salary is less than 30000.
+
+
+
+
+
+Using the departments table to answer the following questions:
+
+a. Write a query to select all columns and rows from the departments table.
+
+Query: SELECT * FROM departments;
+
+Explanation: This query selects all columns and rows from the departments table. The * symbol is used to select all columns. The FROM clause is used to specify the table that the columns will be selected from. The WHERE clause is not used in this query because all columns and rows are selected.
+
+
+
+b. Write a query to select only the name and manager columns of the "Finance" department.
+
+Query: SELECT name, manager FROM departments WHERE name='Finance';
+
+Explanation: This query selects only the name and manager columns of the "Finance" department. The FROM clause is used to specify the table that the columns will be selected from. The WHERE clause is used to filter the results to only include the "Finance" department.
+
+
+
+c. Write a query to calculate the total number of employees in each department.
+
+Query: SELECT departments.name 'Department', COUNT(*) AS 'Total Employees' FROM employees LEFT JOIN departments ON employees.id=departments.id GROUP BY departments.name;
+
+Explanation: This query calculates the total number of employees in each department. COUNT(*) is a function that counts the number of rows in a column. The AS clause is used to rename the column name as 'Total Employees'. The AS clause is optional. The LEFT JOIN clause is used to join the employees and departments tables. The ON clause is used to specify the column that the two tables are joined on. The GROUP BY clause is used to group the results by the department name. 
+
+
+
+d. Write a query to insert a new department called "Research" with a manager named "John Doe".
+
+Query: INSERT INTO `departments`(`id`, `name`, `manager`) VALUES ('','Research','John Doe');
+
+Explanation: INSERT is used to insert a new row into a table. The INTO clause is used to specify the table that the row will be inserted into. The VALUES clause is used to specify the values that will be inserted into the table. The VALUES is not used in 'id' column because the id column is an auto-increment column. The id column will be automatically incremented when a new row is inserted into the table.
