@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Portfolio</title>
+    <style>
+      /*============ PORTFOLIO SECTION ============*/
+      .row.padding {
+        padding: 2rem 0 1rem;
+      }
+
+      img.example-image {
+        max-width: 100%;
+      }
+
+      .row.no-padding [class*="col-"] {
+        padding: 0;
+      }
+
+      .portfolio-item img:hover {
+        transform: scale(1.3);
+        cursor: zoom-in;
+      }
+
+      .portfolio-item img {
+        transition: transform 0.4s ease;
+      }
+
+      .portfolio-item {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">Khan's Dhanda</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+            </ul>
+            <a class="nav-link" href="contact.html"
+              ><button class="btn btn-outline-light fw-bold" type="submit">
+                Contact Us
+              </button></a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="portfolio" class="my-5 pt-3 container">
+        <div class="legal-practice-area-title my-5">
+          <h1 class="h1 text-center">Our Portfolio</h1>
+          <p class="text-center">
+            We have best portfolio in the market. Check out our portfolio.
+          </p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
+              <img
+                src="./assets/portfolios/trees-for-life.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Trees for life</h5>
+                <p class="card-text">
+                  This is a tree plantation charity website made with bootstrap
+                  and react js.
+                </p>
+              </div>
+              <div class="card-footer mx-auto bg-white">
+                <a href="https://trees-4-life.netlify.app/"><input class="btn btn-outline-primary" value="Go To Live"></a>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="./assets/portfolios/rdp.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Turtle RDP</h5>
+                <p class="card-text">
+                  This is a RDP selling website made with bootstrap.
+                </p>
+              </div>
+              <div class="card-footer mx-auto bg-white">
+                <a href="https://saidul-m-khan.github.io/TurtleRDP/"><input class="btn btn-outline-primary" value="Go To Live"></a>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="./assets/portfolios/blog.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">KhanSaab's Blog</h5>
+                <p class="card-text">
+                  This is a blog website made with tailwind css and php.
+                </p>
+              </div>
+              <div class="card-footer mx-auto bg-white">
+                <a href="https://module-9-blog.netlify.app/"><input class="btn btn-outline-primary" value="Go To Live"></a>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="./assets/portfolios/biborton.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Biborton Learning</h5>
+                <p class="card-text">This is a Edtech Website.</p>
+              </div>
+              <div class="card-footer mx-auto bg-white">
+                <a href="https://bibordhon-learning.netlify.app/"><input class="btn btn-outline-primary" value="Go To Live"></a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="container py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="home.html" class="nav-link px-2 text-muted">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="services.html" class="nav-link px-2 text-muted">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="blog.html" class="nav-link px-2 text-muted">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="portfolio.html" class="nav-link px-2 text-muted"
+            >Portfolio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link px-2 text-muted">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link px-2 text-muted">Contact Me</a>
+        </li>
+      </ul>
+      <p class="text-center text-muted">© 2023 Khan's Hub</p>
+    </footer>
+
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

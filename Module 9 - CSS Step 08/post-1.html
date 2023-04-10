@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Post</title>
+    <style>
+        html, body {
+            background: linear-gradient(to top, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+    </style>
+</head>
+<body class="text-cyan-300">
+    
+    <header class="p-4 dark:bg-gray-800 text-cyan-300">
+        <div class="container flex justify-between h-16 mx-auto">
+            <a rel="noopener noreferrer" href="./home.html" aria-label="Back to homepage" class="flex items-center p-2">
+                <img src="./logo.png" alt="">
+            </a>
+            <ul class="items-stretch hidden space-x-3 md:flex">
+                <li class="flex">
+                    <a rel="noopener noreferrer" href="./home.html" class="flex items-center px-4 -mb-1 border-b-2 border-transparent text-violet-400 border-violet-400">Home</a>
+                </li>
+                <li class="flex">
+                    <a rel="noopener noreferrer" href="./blog.html" class="flex items-center px-4 -mb-1 border-b-2 border-transparent">Blog</a>
+                </li>
+                <li class="flex">
+                    <a rel="noopener noreferrer" href="./contact-us.php" class="flex items-center px-4 -mb-1 border-b-2 border-transparent">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main> 
+    <div class="flex justify-center items-center my-10">
+        <div class="w-full max-w-[800px] bg-transparent text-gray-100 border border-gray-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="p-8 rounded-t-lg" src="https://contenthub-static.grammarly.com/blog/wp-content/uploads/2017/11/how-to-write-a-blog-post-760x406.jpeg" alt="product image" />
+                <p class="text-white font-semibold tracking-tight ml-10">Author: <span class="text-gray-400">Saidul Mursalin Khan</span></p>
+            </a>
+            <a href="#">
+                <h5 class="text-3xl font-semibold tracking-tight text-cyan-300 dark:text-white p-10">Our 8-Step Guide for How to Write a Pro Blog Post</h5>
+            </a>
+            <div class="px-10 pb-5 overflow-y h-[500px]">
+                
+                <div class="mx-auto">
+                    <h5 class="dark:text-white mb-6">If you’ve spent any time on the internet, you’re undoubtedly familiar with blog posts. After all, you’re reading one right now. Blog posts are the individual entries that comprise a blog, like episodes of a TV show or entries in a journal. 
+                    Blogging can serve multiple purposes. For one, it’s a great way to establish yourself as an authority on your area of expertise. It can also be an effective way to drive traffic to your website and educate people about the topics you’re passionate about. Additionally, a blog is the perfect place to showcase your writing. </h5>
+                    <span class="text-xl font-semibold tracking-tight text-cyan-300 dark:text-white mb-10">What is a blog post?</span>
+                    <p class="dark:text-white">
+                    
+                    A blog post is a single piece of content published on a blog, a shortened form of the now-archaic term weblog, which is an online platform for publishing written content. A blog can be a section of a website or a standalone website of its own. The blog you’re currently reading is an example of the former, while The Pioneer Woman is an example of the latter. Both are composed of blog posts, pieces of content that each cover a single topic and may (but don’t have to!) include images and videos alongside the written content. 
+
+                    Written content is a key component of a blog post. A YouTube channel isn’t a blog because it’s purely video—it can be considered a vlog, short for video log. Similarly, a feed of purely still images, like an Instagram account, isn’t a blog. 
+
+                    In the earlier days of social media, when platforms like MySpace and Live Journal dominated the scene, blogging and social media were much more entwined than they are today. Now, they’re largely separate, though many bloggers promote and cross-post their work on their social media accounts to drive traffic to their blogs and promote their personal brand. 
+                    </p>
+                </div>
+            </div>
+
+            <button id="facebook-share-btn" class="bg-blue-500 px-4 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded mx-10 my-5" onclick="shareToFacebook()">
+                <svg class="w-5 h-5 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                <span>Share to Facebook</span>
+            </button>
+            
+            
+        </div>
+    </div>
+        
+    </main>
+
+    <footer class="bg-transparent text-gray-300 border border-gray-500 rounded-lg dark:bg-gray-800 dark:border-gray-700 shadow-lg m-4">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://www.facebook.com/saidul.khan2000/" class="hover:underline">Saidul Mursalin Khan</a>. All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </footer>
+
+    <script>
+        function shareToFacebook() {
+            window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(location.href), 'facebook-share-dialog', 'width=800,height=600');
+            return false;
+        }
+    </script>
+</body>
+</html>

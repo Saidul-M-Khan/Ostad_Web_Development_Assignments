@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/blog.css" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">Khan's Dhanda</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="blog.html">Blog</a>
+              </li>
+            </ul>
+            <a class="nav-link" href="contact.html"
+              ><button class="btn btn-outline-light fw-bold" type="submit">
+                Contact Us
+              </button></a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Portfolio Section -->
+      <section class="light my-5 pt-3">
+        <div class="container py-2">
+          <div class="h1 text-center text-dark" id="pageHeaderTitle">
+            Blogs
+          </div>
+
+          <article class="postcard light blue">
+            <a class="postcard__img_link" href="#">
+              <img
+                class="postcard__img"
+                src="./assets/Web Dev.jpg"
+                alt="Image Title"
+              />
+            </a>
+            <div class="postcard__text t-dark">
+              <h1 class="postcard__title blue">
+                <a href="#">The End of Front-End Development</a>
+              </h1>
+              <div class="postcard__subtitle small">
+                <time datetime="2020-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                </time>
+              </div>
+              <div class="postcard__bar"></div>
+              <div class="postcard__preview-txt">
+                Large language models like GPT-4 are becoming increasingly capable, at an alarming rate. Within a couple of years, we won't need developers any more! …Or at least, that's the narrative going viral on Twitter. I'm much more optimistic about what these AI advancements mean for the future of software development.
+              </div>
+              <ul class="postcard__tagbox">
+                <li class="tag__item">
+                  Read More&nbsp;<i class="fa-solid fa-right-long"></i>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="postcard light blue">
+            <a class="postcard__img_link" href="#">
+              <img
+                class="postcard__img"
+                src="./assets/ds.png"
+                alt="Image Title"
+              />
+            </a>
+            <div class="postcard__text t-dark">
+              <h1 class="postcard__title blue">
+                <a href="#">Data Binding in React</a>
+              </h1>
+              <div class="postcard__subtitle small">
+                <time datetime="2020-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                </time>
+              </div>
+              <div class="postcard__bar"></div>
+              <div class="postcard__preview-txt">
+                As developers, we don't like working with forms, but they're a critical part of most web applications! In this tutorial, you'll learn exactly how to wire up all of the different form controls in React. Never forget how to data-bind a checkbox or radio button again!
+              </div>
+              <ul class="postcard__tagbox">
+                <li class="tag__item">
+                  Read More&nbsp;<i class="fa-solid fa-right-long"></i>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="postcard light blue">
+            <a class="postcard__img_link" href="#">
+              <img
+                class="postcard__img"
+                src="./assets/banner.jpg"
+                alt="Image Title"
+              />
+            </a>
+            <div class="postcard__text t-dark">
+              <h1 class="postcard__title blue">
+                <a href="#">Color Formats in CSS</a>
+              </h1>
+              <div class="postcard__subtitle small">
+                <time datetime="2020-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                </time>
+              </div>
+              <div class="postcard__bar"></div>
+              <div class="postcard__preview-txt">
+                CSS gives us so many options when it comes to expressing color—we can use hex codes, rgb, hsl, and more. Which option should we choose? This turns out to be a surprisingly important decision! In this article, we'll take a tour of color formats in CSS, and see which option will serve us best.
+              </div>
+              <ul class="postcard__tagbox">
+                <li class="tag__item">
+                  Read More&nbsp;<i class="fa-solid fa-right-long"></i>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="postcard light blue">
+            <a class="postcard__img_link" href="#">
+              <img
+                class="postcard__img"
+                src="./assets/ai.jpg"
+                alt="Image Title"
+              />
+            </a>
+            <div class="postcard__text t-dark">
+              <h1 class="postcard__title blue">
+                <a href="#">An Interactive Guide to Flexbox</a>
+              </h1>
+              <div class="postcard__subtitle small">
+                <time datetime="2020-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                </time>
+              </div>
+              <div class="postcard__bar"></div>
+              <div class="postcard__preview-txt">
+                When we truly learn the secrets of the Flexbox layout mode, we can build absolutely incredible things. Fluid layouts that stretch and shrink without arbitrary breakpoints. In this action-packed interactive tutorial, we'll pop the hood on the Flexbox algorithm and learn how to do remarkable things with it. 
+              </div>
+              <ul class="postcard__tagbox">
+                <li class="tag__item">
+                  Read More&nbsp;<i class="fa-solid fa-right-long"></i>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="postcard light blue">
+            <a class="postcard__img_link" href="#">
+              <img
+                class="postcard__img"
+                src="./assets/cyber security.jpg"
+                alt="Image Title"
+              />
+            </a>
+            <div class="postcard__text t-dark">
+              <h1 class="postcard__title blue">
+                <a href="#">The Surprising Truth About Pixels and Accessibility</a>
+              </h1>
+              <div class="postcard__subtitle small">
+                <time datetime="2020-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                </time>
+              </div>
+              <div class="postcard__bar"></div>
+              <div class="postcard__preview-txt">
+                “Should I use pixels or rems?”. In this comprehensive blog post, we'll answer this question once and for all. You'll learn about the accessibility implications, and how to determine the best unit to use in any scenario.
+              </div>
+              <ul class="postcard__tagbox">
+                <li class="tag__item">
+                  Read More&nbsp;<i class="fa-solid fa-right-long"></i>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="container py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="home.html" class="nav-link px-2 text-muted">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="services.html" class="nav-link px-2 text-muted">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="blog.html" class="nav-link px-2 text-muted">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="portfolio.html" class="nav-link px-2 text-muted"
+            >Portfolio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link px-2 text-muted">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link px-2 text-muted">Contact Me</a>
+        </li>
+      </ul>
+      <p class="text-center text-muted">© 2023 Khan's Hub</p>
+    </footer>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d0e67103e9.js" crossorigin="anonymous"></script>
+  </body>
+</html>

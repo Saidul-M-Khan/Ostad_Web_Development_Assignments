@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Home</title>
+    <style>
+      .banner {
+        background-image: url("./assets/banner.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+        width: 80vw;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">Khan's Dhanda</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+            </ul>
+            <a class="nav-link" href="contact.html"
+              ><button class="btn btn-outline-light fw-bold" type="submit">
+                Contact Us
+              </button></a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Banner Section -->
+      <section
+        class="container banner mt-5 d-flex flex-column justify-content-center aligns-items-center pt-3"
+      >
+        <div class="border bg-black opacity-50 m-auto p-5">
+          <h1 class="h1 text-center text-white">
+            We Provide Effective Tech Solutions 
+          </h1>
+          <p class="text-center text-white">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
+        </div>
+      </section>
+
+      <!-- Client Review Section -->
+      <section id="slider" class="slider">
+        <div class="client-review-title my-5">
+          <h1 class="h1 text-center">What Our Client Say</h1>
+          <p class="text-center">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
+        </div>
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide my-5"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img
+                src="./assets/Web Dev.jpg"
+                class="d-block w-100 img-fluid"
+                height="600"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <img
+                  src="https://s.yimg.com/ny/api/res/1.2/vbjgjXm2vUH7ST8h0yne7Q--/YXBwaWQ9aGlnaGxhbmRlcjtoPTY2Ng--/https://o.aolcdn.com/images/dimse/5845cadfecd996e0372f/0f90bb38f55d9445bd4d36acd7499fc13a05466c/dGh1bWJuYWlsPTUwMCUyQzUwMCZxdWFsaXR5PTgwJmltYWdlX3VyaT1odHRwcyUzQSUyRiUyRnMuYmxvZ2Nkbi5jb20lMkZ3d3cuZW5nYWRnZXQuY29tJTJGbWVkaWElMkYyMDE5JTJGMDElMkZuaWNrMjAxOWhlYWRzaG90LmpwZyZjbGllbnQ9YW1wLWJsb2dzaWRlLXYyJnNpZ25hdHVyZT05ZGVjOTc2NDllOTEwZGUyYzg2MmVmNzdhMGNmMjc4OGUzNmZjZWM0"
+                  alt=""
+                  style="width: 25%; border-radius: 50%"
+                />
+                <h1>Alex Clay</h1>
+                <p>
+                  The team is very professional and knowledgeable. They made
+                  best website for me. I am very happy with the results.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="./assets/ds.png"
+                class="d-block w-100 img-fluid"
+                height="600"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1474140524084965388/UnRWELSv_400x400.jpg"
+                  alt=""
+                  style="width: 25%; border-radius: 50%"
+                />
+                <h1>Jimmy Forge</h1>
+                <p>
+                  They made best prediction model for me. I am very happy with
+                  the results.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="./assets/ai.jpg"
+                class="d-block w-100 img-fluid"
+                height="600"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <img
+                  src="https://imageio.forbes.com/specials-images/imageserve/60676384c5f722607f2ae0df/0x0.jpg?format=jpg&crop=1078,1078,x0,y2,safe&height=416&width=416&fit=bounds"
+                  alt=""
+                  style="width: 25%; border-radius: 50%"
+                />
+                <h1>Jack Paul</h1>
+                <p>
+                  They made best face recognition system for me. I am very happy
+                  with the results.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq">
+        <div class="client-review-title my-5">
+          <h1 class="h1 text-center">FAQ</h1>
+          <p class="text-center">
+            We are here to answer any questions you may have about our services.
+          </p>
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Do you have refund option?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>Yes.</strong> Your satisfaction is our top priority so
+                we will provide money back guarantee if you are not satisfied
+                with our services.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Who are your clients?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>Our clients are from all over the world.</strong> We
+                have clients from USA, UK, Canada, Australia, India, Pakistan,
+                Bangladesh, etc.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                What is your working process?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>Our working process is very simple.</strong> You just
+                need to contact us and tell us about your requirements. We will
+                provide you with a quote and if you are satisfied with the quote
+                then you can hire us.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="container py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="home.html" class="nav-link px-2 text-muted">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="services.html" class="nav-link px-2 text-muted">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="blog.html" class="nav-link px-2 text-muted">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="portfolio.html" class="nav-link px-2 text-muted"
+            >Portfolio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link px-2 text-muted">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link px-2 text-muted">Contact Me</a>
+        </li>
+      </ul>
+      <p class="text-center text-muted">© 2023 Khan's Hub</p>
+    </footer>
+
+    <script src="./js/bootstrap.min.js"></script>
+    
+  </body>
+</html>

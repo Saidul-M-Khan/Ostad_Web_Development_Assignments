@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">Khan's Dhanda</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+            </ul>
+            <a class="nav-link" href="contact.html"
+              ><button class="btn btn-outline-light fw-bold active" type="submit">
+                Contact Us
+              </button></a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Contact Form -->
+      <section id="contact-us" class="container my-5 pt-3">
+        <div class="client-review-title my-5">
+          <h1 class="h1 text-center">Contact Us</h1>
+          <p class="text-center">
+            We are here to answer any questions you may have about our services.
+          </p>
+        </div>
+        <div class="row mx-0 justify-content-between aligns-items-center">
+          <div class="col">
+            <img class="img-fluid" src="./assets/animations/contact.gif" alt="">
+          </div>
+          <div class="col-md-6 col-lg-5 px-lg-2 col-xl-4 px-xl-0 px-xxl-3">
+            <form
+              method="POST"
+              class="w-100 rounded-1 p-4 border text-secondary bg-dark border-secondary"
+              action=""
+            >
+              <label class="d-block mb-4">
+                <span class="form-label d-block text-light">Your name</span>
+                <input
+                  name="name"
+                  type="text"
+                  class="form-control text-light border-secondary bg-transparent"
+                  placeholder="Saidul Mursalin Khan"
+                />
+              </label>
+
+              <label class="d-block mb-4">
+                <span class="form-label d-block text-light">Email</span>
+                <input
+                  name="datetime"
+                  type="email"
+                  class="form-control text-light border-secondary bg-transparent"
+                  placeholder="saidul@gmail.com"
+                />
+              </label>
+
+              <label class="d-block mb-4">
+                <span class="form-label d-block text-light"
+                  >Phone Number</span
+                >
+                <input
+                  name="phone"
+                  type="tel"
+                  class="form-control text-light border-secondary bg-transparent"
+                  placeholder="1234" />
+              </label>
+
+              <label class="d-block mb-4">
+                <span
+                  class="form-label d-block text-light border-secondary bg-transparent"
+                  >Message</span
+                >
+                <textarea
+                  name="message"
+                  class="form-control border-secondary bg-transparent text-light"
+                  rows="3"
+                  placeholder="Write your message?"
+                ></textarea>
+              </label>
+
+              <div class="mb-3">
+                <button type="submit" class="btn btn-primary px-3 rounded-3">
+                  Submit
+                </button>
+              </div>
+
+              <div class="d-block text-end">
+                <div class="small text-white-50">
+                  by
+                  <a
+                    href="https://izzatweb.netlify.app"
+                    class="text-decoration-none text-white-50"
+                    target="_blank"
+                    >Nysk.id</a
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="container py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="home.html" class="nav-link px-2 text-muted">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="services.html" class="nav-link px-2 text-muted">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="blog.html" class="nav-link px-2 text-muted">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="portfolio.html" class="nav-link px-2 text-muted"
+            >Portfolio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link px-2 text-muted">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link px-2 text-muted">Contact Me</a>
+        </li>
+      </ul>
+      <p class="text-center text-muted">© 2023 Khan's Hub</p>
+    </footer>
+
+    <script src="./js/bootstrap.min.js"></script>
+    
+  </body>
+</html>
