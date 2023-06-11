@@ -1,0 +1,211 @@
+1.Explain what Laravel's query builder is and how it provides a simple and elegant way to interact with databases.
+Answer:
+Laravel's query builder is a convenient, fluent interface to creating and running database queries. It used to perform most database operations in our application, and works on all supported database systems.
+
+The query builder provides a number of methods for building and executing queries, including:
+select(): Selects rows from a table.
+where(): Filters rows based on a condition.
+orderBy(): Sorts rows by a column.
+groupBy(): Groups rows by a column.
+having(): Filters rows in a group based on a condition.
+limit(): Limits the number of rows returned.
+offset(): Skips a number of rows before returning rows.
+
+The query builder also provides a number of other methods for performing more complex queries, such as joins, unions, and subqueries. That is how it provides a simple and elegant way to interact with databases.
+
+
+
+2.Write the code to retrieve the "excerpt" and "description" columns from the "posts" table using Laravel's query builder. Store the result in the $posts variable. Print the $posts variable.
+Answer:
+Controller Function:
+function Posts(){
+    $posts=DB::table('posts')
+    	->select('excerpt', 'description')
+    	->get();
+    return $posts;
+}
+
+Route:
+Route::get('/posts', [DemoController::class, 'Posts']);
+
+
+
+3.Describe the purpose of the distinct() method in Laravel's query builder. How is it used in conjunction with the select() method?
+Answer:
+The distinct() method is used to retrieve the unique rows from any table in the database. It is use to prevent duplicate rows from being returned by a query. The distinct() method can be used in conjunction with the select() method to specify which columns should be returned from the query.
+
+
+
+4.Write the code to retrieve the first record from the "posts" table where the "id" is 2 using Laravel's query builder. Store the result in the $posts variable. Print the "description" column of the $posts variable.
+Answer:
+Controller Function:
+function Post(){
+    $posts=DB::table('posts')
+    	->select('description')
+		->where('id', 2)
+		->first()
+    	->get();
+    return $posts;
+}
+
+Route:
+Route::get('/post', [DemoController::class, 'Post']);
+
+
+
+5.Write the code to retrieve the "description" column from the "posts" table where the "id" is 2 using Laravel's query builder. Store the result in the $posts variable. Print the $posts variable.
+Answer:
+Controller Function:
+function Post(){
+    $posts=DB::table('posts')
+    	->select('description')
+		->where('id', 2)
+    	->get();
+    return $posts;
+}
+
+Route:
+Route::get('/post', [DemoController::class, 'Post']);
+
+
+
+6.Explain the difference between the first() and find() methods in Laravel's query builder. How are they used to retrieve single records?
+Answer:
+The first() and find() methods in Laravel's query builder are used to retrieve single records from a database table. The first() method is used to retrieve first row of any table in the database. The find() method is typically used when we need to retrieve all rows that match the specified criteria from the database. We don't need to use get() to display the results.
+
+
+
+7.Write the code to retrieve the "title" column from the "posts" table using Laravel's query builder. Store the result in the $posts variable. Print the $posts variable.
+Answer:
+Controller Function:
+function Post(){
+    $posts=DB::table('posts')
+    	->select('title')
+		->where('id', 2)
+    	->get();
+    return $posts;
+}
+
+Route:
+Route::get('/post', [DemoController::class, 'Post']);
+
+
+
+8.Write the code to insert a new record into the "posts" table using Laravel's query builder. Set the "title" and "slug" columns to 'X', and the "excerpt" and "description" columns to 'excerpt' and 'description', respectively. Set the "is_published" column to true and the "min_to_read" column to 2. Print the result of the insert operation.
+Answer:
+Controller Function:
+function insertPost(){
+	$insertedPosts=DB::table('posts')
+    	->insert([
+			"title"=>"X", 
+			"slug"=>"X", 
+			"excerpt"=>"excerpt", 
+			"description"=>"description",
+			'is_published' => true,
+        	'min_to_read' => 2,
+		]);
+    return $insertedPosts;
+}
+
+Route:
+Route::get('/insertPost', [DemoController::class, 'insertPost']);
+
+
+
+9.Write the code to update the "excerpt" and "description" columns of the record with the "id" of 2 in the "posts" table using Laravel's query builder. Set the new values to 'Laravel 10'. Print the number of affected rows.
+Answer:
+Controller Function:
+function updatePost(){
+	$updatePosts=DB::table('posts')
+		->where('id', 2)
+    	->update([
+			"excerpt"=>"Laravel 10",
+			"description"=>"Laravel 10",
+		]);
+    return $updatePosts;
+}
+
+Route:
+Route::get('/updatePost', [DemoController::class, 'updatePost']);
+
+
+
+10.Write the code to delete the record with the "id" of 3 from the "posts" table using Laravel's query builder. Print the number of affected rows.
+Answer:
+Controller Function:
+function deletePost(){
+	$affectedRows = DB::table('posts')
+    	->where('id', 3)
+	   	->delete();
+	return $affectedRows;
+}
+
+Route:
+Route::get('/deletePost', [DemoController::class, 'deletePost']);
+
+
+
+11.Explain the purpose and usage of the aggregate methods count(), sum(), avg(), max(), and min() in Laravel's query builder. Provide an example of each.
+Answer:
+Here’s a brief explanation of the purpose and usage of the aggregate methods in Laravel’s query builder:
+
+count(): This method returns the number of rows that match the query.
+sum(): This method returns the sum of all values for a given column.
+avg(): This method returns the average value for a given column.
+max(): This method returns the maximum value for a given column.
+min(): This method returns the minimum value for a given column.
+
+Here’s an example of each:
+$count = DB::table('users')->count(); // count()
+$sum = DB::table('sales')->sum('amount'); // sum()
+$avg = DB::table('products')->avg('price'); // avg()
+$max = DB::table('scores')->max('score'); // max()
+$min = DB::table('temperatures')->min('temperature'); // min()
+
+
+
+12.Describe how the whereNot() method is used in Laravel's query builder. Provide an example of its usage.
+Answer:
+The whereNot() method in Laravel’s query builder is used to add a where clause to the query that excludes certain values. It is the opposite of the where() method, which includes certain values.
+Here’s an example of how to use it:
+			$posts = DB::table( 'posts' )
+            	->whereNot( 'id', 2 )
+            	->get();
+        	return $posts;
+This will return all posts whose id is not 2.
+
+
+
+13.Explain the difference between the exists() and doesntExist() methods in Laravel's query builder. How are they used to check the existence of records?
+Answer:
+The exists() and doesntExist() methods in Laravel's query builder are used to check if a record exists in the database. The exists() method returns true if a record exists, and false if it does not. The doesntExist() method returns true if a record does not exist, and false if it does.
+
+
+
+14.Write the code to retrieve records from the "posts" table where the "min_to_read" column is between 1 and 5 using Laravel's query builder. Store the result in the $posts variable. Print the $posts variable.
+Answer:
+Controller Function:
+function Posts(){
+	$posts = DB::table('posts')
+    	->whereBetween('min_to_read', [1, 5])
+    	->get();
+	return $posts;
+}
+
+Route:
+Route::get('/posts', [DemoController::class, 'Posts']);
+ 
+
+
+15.Write the code to increment the "min_to_read" column value of the record with the "id" of 3 in the "posts" table by 1 using Laravel's query builder. Print the number of affected rows.
+Answer:
+Controller Function:
+function Post(){
+	$affectedRows = DB::table('posts')
+    	->where('id', 3)
+	   	->increment('min_to_read');
+	return $affectedRows;
+}
+
+Route:
+Route::get('/Post', [DemoController::class, 'Post']);
