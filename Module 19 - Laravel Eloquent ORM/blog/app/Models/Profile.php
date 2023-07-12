@@ -11,6 +11,7 @@ class Profile extends Model
     use HasFactory;
 
     protected $fillable = ['name', 'bio'];
+    public $timestamps = true;
 
     function users():BelongsTo{
         return $this->belongsTo(User::class);

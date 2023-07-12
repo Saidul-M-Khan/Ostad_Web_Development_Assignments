@@ -21,6 +21,7 @@
             document.getElementById("content-div").classList.remove("hidden");
 
             console.log(response.data);
+
             response.data.forEach((item) => {
                 document.getElementById("post-list").innerHTML += `
     <div
@@ -36,7 +37,7 @@
         <div class="mt-3">
             <a
                 rel="noopener noreferrer"
-                href="#"
+                href="/blog/post/${item["id"]}"
                 class="text-2xl font-bold hover:underline"
                 >${item["title"]}</a
             >

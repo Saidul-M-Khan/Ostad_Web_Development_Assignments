@@ -1,4 +1,4 @@
-<nav class="bg-white py-2 md:py-4">
+<nav class="bg-white py-2 md:py-4 sticky top-0">
     <div class="container px-4 mx-auto md:flex md:items-center">
         <div class="flex justify-between items-center">
             <a href="{{url('/')}}" class="font-bold text-xl text-indigo-600"
@@ -19,7 +19,7 @@
             <a
                 href="{{url('/blogs')}}"
                 class="p-2 lg:px-4 md:mx-2 text-white rounded bg-indigo-600"
-                >Blog</a
+                >Blogs</a
             >
             <a
                 href="{{url('/about')}}"

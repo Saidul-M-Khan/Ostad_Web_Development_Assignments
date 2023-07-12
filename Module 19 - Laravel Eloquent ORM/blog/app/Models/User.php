@@ -12,6 +12,7 @@ class User extends Model
     use HasFactory;
 
     protected $fillable = ['name', 'email'];
+    public $timestamps = true;
 
     function profiles():HasOne{
         return $this->hasOne(Profile::class);

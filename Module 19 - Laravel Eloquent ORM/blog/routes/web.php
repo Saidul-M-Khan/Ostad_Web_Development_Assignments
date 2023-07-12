@@ -9,9 +9,6 @@ use Illuminate\Support\Facades\Route;
 
 
 /* Page Route */
-// Route::get( '/', function () {
-//     return view( 'app' );
-// } );
 Route::get('/', [PostController::class, 'blogPage']);
 Route::get('/blogs', [PostController::class, 'blogPage']);
 Route::get('/blog/post/{postId}', [PostController::class, 'postPage']);

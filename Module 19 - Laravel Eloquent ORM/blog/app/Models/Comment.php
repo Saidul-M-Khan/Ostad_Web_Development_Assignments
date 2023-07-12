@@ -10,9 +10,11 @@ class Comment extends Model
 {
     use HasFactory;
 
-    // protected $fillable = ['post_id', 'user_id', 'content', 'created_at'];
+    protected $fillable = ['post_id', 'user_id', 'content', 'created_at'];
 
-    protected $guarded = [];
+    public $timestamps = true;
+
+    // protected $guarded = [];
 
     function users():BelongsTo{
         return $this->belongsTo(User::class);

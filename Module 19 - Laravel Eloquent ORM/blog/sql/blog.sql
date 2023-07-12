@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 12, 2023 at 10:02 AM
+-- Generation Time: Jul 12, 2023 at 10:59 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -48,7 +48,12 @@ INSERT INTO `comments` (`id`, `user_id`, `post_id`, `content`, `created_at`, `up
 (5, 2, 4, 'Yes It\'s True!', '2023-07-11 20:51:38', '2023-07-11 20:51:38'),
 (6, 5, 4, 'I think so!', '2023-07-11 20:51:38', '2023-07-11 20:51:38'),
 (7, 6, 3, 'It\'s a trash anime!', '2023-07-11 20:52:42', '2023-07-11 20:52:42'),
-(8, 2, 3, 'It\'s my favorite one!', '2023-07-11 20:52:42', '2023-07-11 20:52:42');
+(8, 2, 3, 'It\'s my favorite one!', '2023-07-11 20:52:42', '2023-07-11 20:52:42'),
+(10, 1, 4, 'Good', '2023-07-12 13:40:50', '2023-07-12 13:40:50'),
+(11, 1, 4, 'It\'s really good', '2023-07-12 13:44:13', '2023-07-12 13:44:13'),
+(12, 1, 2, 'Nice animal!', '2023-07-12 13:46:02', '2023-07-12 13:46:02'),
+(14, 1, 6, 'It will never die my boy!', '2023-07-12 14:19:57', '2023-07-12 14:19:57'),
+(15, 1, 6, 'good', '2023-07-12 14:20:31', '2023-07-12 14:20:31');
 
 -- --------------------------------------------------------
 
@@ -282,7 +287,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `migrations`

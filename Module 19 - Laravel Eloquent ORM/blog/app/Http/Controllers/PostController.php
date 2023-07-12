@@ -8,18 +8,12 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     function blogPage(){
-        // $posts = Post::with('tags', 'comments')->get();
-        // return view('pages.blog', ['posts'=>$posts]);
         return view('pages.blog');
     }
 
     function postPage(Request $request){
         $postId = $request->postId;
-        $post = Post::with('tags', 'comments')
-        ->where('id', '=', $postId)
-        ->get();
-        return view('pages.post')->with(['postId'=>$postId, 'post'=>$post]);
-        // return view('pages.post', ['id'=>$id]);
+        return view('pages.post', ['postId'=>$postId]);
     }
 
     function getPosts(){

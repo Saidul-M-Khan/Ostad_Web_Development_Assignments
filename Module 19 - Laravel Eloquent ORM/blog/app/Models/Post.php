@@ -14,6 +14,8 @@ class Post extends Model
 
     protected $fillable = ['user_id', 'title', 'content', 'image', 'created_at'];
 
+    public $timestamps = true;
+
     function users():BelongsTo{
         return $this->belongsTo(User::class);
     }
