@@ -6,20 +6,22 @@
         <nav class="flex flex-wrap justify-center -mx-5 -my-2">
             <div class="px-5 py-2">
                 <a
+                    href="{{url('/')}}"
+                    class="text-base leading-6 text-gray-500 hover:text-gray-900"
+                >
+                    Home
+                </a>
+            </div>
+            
+            <div class="px-5 py-2">
+                <a
                     href="{{url('/about-us')}}"
                     class="text-base leading-6 text-gray-500 hover:text-gray-900"
                 >
                     About
                 </a>
             </div>
-            <div class="px-5 py-2">
-                <a
-                    href="{{url('/blogs')}}"
-                    class="text-base leading-6 text-gray-500 hover:text-gray-900"
-                >
-                    Blogs
-                </a>
-            </div>
+
             <div class="px-5 py-2">
                 <a
                     href="{{url('/contact-us')}}"
@@ -30,7 +32,7 @@
             </div>
             <div class="px-5 py-2">
                 <a
-                    href="{{url('/terms')}}"
+                    href="#"
                     class="text-base leading-6 text-gray-500 hover:text-gray-900"
                 >
                     Terms
